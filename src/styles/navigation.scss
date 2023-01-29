@@ -1,0 +1,18 @@
+@import "./variables.scss";
+
+.navigation {
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  box-shadow: 5px 5px 8px 2px #8395A766;
+  display: flex;
+  align-items: center;
+}
+
+.navigation-title {
+  margin-left: 15px;
+  color: $color-primary;
+  font-size: 25px;
+}

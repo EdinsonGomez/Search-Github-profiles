@@ -1,0 +1,39 @@
+$heigh-card: 210px;
+
+.profile-container {
+  height: $heigh-card;
+  width: 180px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 5px 6px 10px 4px #BFC4CAD1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.profile-avatar {
+  $size: 100px;
+  width: $size;
+  height: $size;
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow: 4px 5px 8px 5px rgba(0, 0, 0, 0.35);
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  translate: -50%;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.profile-details {
+  height: $heigh-card * 0.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

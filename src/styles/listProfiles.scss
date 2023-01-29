@@ -1,0 +1,12 @@
+.list-container {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 6rem 1rem;
+  justify-items: center;
+}
