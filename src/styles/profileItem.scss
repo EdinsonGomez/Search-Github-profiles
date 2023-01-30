@@ -1,6 +1,21 @@
-$heigh-card: 210px;
+@import "../styles/variables.scss";
+
+$heigh-card: 230px;
+$width-card: 180px;
 
 .profile-container {
+  height: $heigh-card + 50px;
+  width: $width-card + 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.profile-content {
   height: $heigh-card;
   width: 180px;
   position: relative;
@@ -36,4 +51,64 @@ $heigh-card: 210px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.profile-name {
+  font-weight: bold;
+  text-align: center;
+  color: $color-primary;
+}
+
+.profile-location {
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+
+  &-icon {
+    margin: 0 3px;
+  }
+
+  &-text {
+    max-width: 80%;
+    color: $color-primary;
+  }
+}
+
+.profile-details-content {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 10px;
+}
+
+.profile-details-content-item {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+}
+
+.profile-content-icon {
+  font-size: 12px;
+  margin: 0 3px;
+  color: $color-primary;
+}
+
+.profile-social-media-icon {
+  font-size: 22px;
+  margin: 5px 3px 0 3px;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  &.twitter-icon {
+    color: #60a1d4;
+  }
 }

@@ -5,7 +5,8 @@ export const searchProfiles = (search) => {
     "https://api.github.com/search/users",
     {
       params: {
-        q: search
+        q: search,
+        per_page: 18
       }
     }
   )

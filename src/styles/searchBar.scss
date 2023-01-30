@@ -1,10 +1,44 @@
-.searchBar {
+.searchBar-container {
   width: 100%;
   display: flex;
   justify-content: center;
+}
 
-  input {
-    height: 35px;
-    border-radius: 5px;
+.searchBar-input {
+  width: 300px;
+  border: none;
+  background: none;
+  outline: none;
+  padding: 0 15px;
+  float: left;
+  font-size: 16px;
+  color: rgba(white, 0.8);
+
+  &::placeholder {
+    color: #f3f5f7b0;
   }
+}
+
+.searchBar-btn {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #2f3640;
+  background: white;
+  border: none;
+
+  &:hover {
+    cursor: pointer;
+    background: #e9eced;
+  }
+}
+
+.searchBar-form {
+  height: 40px;
+  border-radius: 40px;
+  padding: 5px;
+  background-color: #2f3640;
+  display: flex;
+  align-items: center;
 }

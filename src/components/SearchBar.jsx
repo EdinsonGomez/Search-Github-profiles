@@ -1,6 +1,8 @@
 import React, { useContext, useState } from "react";
 import AppContext from "../store/context";
 import { changeSearchValue } from "../store/actions";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass } from "@fortawesome/free-solid-svg-icons";
 import "../styles/searchBar.scss";
 
 const SearchBar = () => {
@@ -17,18 +19,21 @@ const SearchBar = () => {
   }
 
   return (
-    <form className="searchBar" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Escriba nombre de usuario"
-        value={searchValue}
-        onChange={handleClick}
-      />
-      
-      <button type="submit">
-        Search
-      </button>
-    </form>
+    <div className="searchBar-container">
+      <form className="searchBar-form" onSubmit={handleSubmit}>
+        <input
+          className="searchBar-input"
+          type="text"
+          placeholder="Buscar nombre de usuario"
+          value={searchValue}
+          onChange={handleClick}
+        />
+
+        <button type="submit" className="searchBar-btn">
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+        </button>
+      </form>
+    </div>
   );
 };
 
